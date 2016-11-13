@@ -1,0 +1,10 @@
+EJERCICIO
+
+Aplicando Spring Core, programación en capas,
+desarrolle un ejemplo para encontrar el 
+promedio de un estudiante y su condición
+de aprobado o desaprobado.
+
+Son 4 notas, se elimina la menor.
+
+Nota aprobatoria minima es 14.0.
