@@ -4,8 +4,8 @@
 # DATOS GENERALES
 
 - Lugar: SistemasUNI
-- Horario: Domingos de 15 a 21 Horas
-- Inicio: 30-OCTUBRE-2016
+- Horario: Domingos de 08 a 14 Horas
+- Inicio: 13-NOV-2016
 - Dirección: https://goo.gl/maps/98vwAt9NZMU2
 - Contenido: http://www.sistemasuni.edu.pe/dpdf/Workshops/WorkshopSpringFramework.pdf
 - Sitio web: http://www.sistemasuni.edu.pe
