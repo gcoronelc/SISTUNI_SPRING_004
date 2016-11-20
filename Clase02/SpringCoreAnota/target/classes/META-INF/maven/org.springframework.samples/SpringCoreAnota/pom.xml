@@ -61,12 +61,20 @@
 			<version>${hibernate.version}</version>
 		</dependency>
 
-
+		<!-- CDI Anotaciones -->
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.10</version>
+		</dependency>
+
 
 
 		<!-- Test Artifacts -->
