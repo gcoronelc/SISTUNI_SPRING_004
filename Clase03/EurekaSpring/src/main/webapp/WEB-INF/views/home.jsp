@@ -1,14 +1,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
 <html>
 <head>
 	<title>Home</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
+  <h1>EUREKA HOME</h1>
+  
+  <a href="conSaldo.htm">Consultar Saldo</a><br/>
+  <a href="conEmpleado.htm">Consultar Empleado</a><br/>
+  
+  
 </body>
 </html>
