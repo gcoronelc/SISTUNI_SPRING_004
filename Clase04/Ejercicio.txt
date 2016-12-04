@@ -1,0 +1,1 @@
+Consultar las cuentas de una sucursal.
