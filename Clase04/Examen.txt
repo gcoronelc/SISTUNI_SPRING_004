@@ -1,0 +1,9 @@
+Todo con AJAX y JSON
+----------------------------------------
+- Deposito
+- Retiro
+- CRUD
+
+Si es con Angular2 es 20.
+
+
