@@ -26,4 +26,12 @@ public class EmpleadoService {
   public void insert(Empleado bean) {
     empleadoDao.insert(bean);
   }
+  
+  public Empleado validate(String usuario, String clave){
+    Empleado bean = empleadoDao.validate(usuario, clave);
+    if(bean == null){
+      throw new RuntimeException("Datos incorrectos.");
+    }
+    return bean;
+  }
 }

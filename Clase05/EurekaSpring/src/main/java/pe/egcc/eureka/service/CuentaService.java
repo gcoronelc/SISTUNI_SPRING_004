@@ -21,4 +21,8 @@ public class CuentaService {
   public List<Map<String, Object>> traerMovimientos(String cuenta) {
     return cuentaDao.traerMovimientos(cuenta);
   }
+  
+  public void procRetiro(String cuenta, double importe, String codEmp, String clave) {
+    cuentaDao.procRetiro(cuenta, importe, codEmp, clave);
+  }
 }

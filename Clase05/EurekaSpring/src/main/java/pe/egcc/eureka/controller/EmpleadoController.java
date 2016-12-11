@@ -77,7 +77,7 @@ public class EmpleadoController {
 
   
   
-  
+  // Consultar varios empleados
   
   @RequestMapping(value="/conEmpleados.htm", method=RequestMethod.GET)
   public String conEmpleados(){
@@ -96,6 +96,39 @@ public class EmpleadoController {
     }
     return "conEmpleados";
   }
+
+  
+  // Consultar varios empleados - Jackson  
+  
+  @RequestMapping(value="/conEmpleados2.htm", 
+      method=RequestMethod.GET)
+  public String conEmpleados2(){
+    return "conEmpleados2";
+  }
+  
+  
+  @RequestMapping(value="/conEmpleados2.htm", 
+      method=RequestMethod.POST,
+      produces = "application/json; charset=utf-8")
+  public @ResponseBody JsonBean conEmpleados2
+  (@ModelAttribute Empleado bean){
+    JsonBean jsonBean = new JsonBean();
+    try {
+      List<Empleado> lista = empleadoService.read(bean);
+      jsonBean.setCode(1);
+      Gson gson = new Gson();
+      jsonBean.setText(gson.toJson(lista));
+    } catch (Exception e) {
+      jsonBean.setCode(-1);
+      jsonBean.setText(e.getMessage());
+    }
+    return jsonBean;
+  }  
+  
+  
+  
+  
+  
   
   @RequestMapping(value="/proInsEmpleado.htm", method=RequestMethod.GET)
   public String proInsEmpleado(){

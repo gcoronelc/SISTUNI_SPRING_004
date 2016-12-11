@@ -9,4 +9,7 @@ public interface CuentaDaoSpec {
 
   List<Map<String,Object>> traerMovimientos(String cuenta);
   
+  void procRetiro(String cuenta, double importe, 
+      String codEmp, String clave);
+  
 }

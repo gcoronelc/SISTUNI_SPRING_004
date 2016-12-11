@@ -42,5 +42,11 @@ public class CuentaDaoImpl extends AbstractDao implements CuentaDaoSpec {
         jdbcTemplate.queryForList(sql, args);
     return lista;
   }
+
+  @Override
+  public void procRetiro(String cuenta, double importe, String codEmp, String clave) {
+    jdbcTemplate.update("call usp_egcc_retiro (?, ?, ?, ?)",
+        cuenta, importe, codEmp, clave);
+  }
   
 }
